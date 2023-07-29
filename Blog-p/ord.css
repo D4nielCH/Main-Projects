@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  
+  body{
+      background-color:rgba(0, 0, 0, 0.954);
+      height: 800px;
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
+
+  main{
+    
+    width: 100%; height: 100%;
+    background: url(/img/bw.jpg) ;
+    background-position:center;
+    background-attachment: fixed; 
+    background-size:cover;
+}
+
+a { text-decoration: none; }
+
+
+/*---------- parte superior ----------*/
+
+header{
+    background-color: rgba(0, 0, 0, 0.498);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    align-content: center;
+    transition: 1.5s;
+}
+
+header:hover{
+background-color: rgba(0, 0, 0, 0.723);
+}
+
+
+/*----- Izquierda -----*/
+
+.izq{
+    margin: 20px;
+    height: 80px; width: 165px;
+     background-color: rgba(0, 0, 0, 0.414); 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.left{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.logo-img{
+    height: 60px; width: 110px;
+}
+
+.izq:hover{
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.327), 0 0 40px
+    rgba(255, 0, 0, 0.345), 0 0 80px rgba(255, 0, 0, 0.345);
+transition-delay: 1s:
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.mrch{
+    
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color:red;
+}
+
+.c-c{
+    
+    width: 95px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: red;
+    
+
+}
+
+.mrch:hover{
+    background-color: #ed1c24;
+    color: black;
+    transition: 1s;
+
+}
+
+.c-c:hover{
+    background-color: #ed1c24;
+    color: black;
+    transition: 1s;
+
+}
+
+/*----- Derecha -----*/
+
+.drch{
+    background-color: black;
+    display: flex;
+    margin: 20px;
+    height: 50px; width: 130px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    transition: 1s; 
+   
+}
+
+.drch a{
+    text-decoration: none;
+    color: #ed1c24;
+}
+
+.drch:hover{
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.327), 0 0 40px
+    rgba(255, 0, 0, 0.345), 0 0 80px rgba(255, 0, 0, 0.345);
+
+}
+/*----------------------------------------*/
+
+
+
+/*------ Main ------*/
+
+
+.father{
+width: auto; height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 30px;
+align-items: center;
+gap: 20px;
+}
+/*----Boxs slider----*/
+
+.titulo{
+    margin: 10px;
+}
+
+
+.s-b{
+    background-color: rgba(0, 0, 0, 0.498);
+    height: 400px; width: 600px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    flex: 1 0 auto; 
+    scroll-snap-align: center;   
+}
+
+
+.s2-b{
+    background-color: rgba(0, 0, 0, 0.498);
+    height: 400px; width: 600px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    flex: 1 0 auto; 
+    scroll-snap-align: center; 
+}
+
+
+
+.s3-b{
+    background-color: rgba(0, 0, 0, 0.498);
+    height: 400px; width: 600px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    flex: 1 0 auto; 
+    scroll-snap-align: center;
+}
+
+
+.s4-b{
+    background-color: rgba(0, 0, 0, 0.498);
+    height: 400px; width: 600px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    flex: 1 0 auto; 
+    scroll-snap-align: center;
+}
+
+
+
+
+
+
+.s-img{
+    width: 200px; height: 300px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.slider-s{
+    display: flex;
+overflow-x: scroll;
+max-width: 600px;
+scroll-snap-type: x mandatory;
+border-radius: 15px;
+gap: 20px;
+transition: 1.3s;
+::-webkit-scrollbar-track{
+    display: none;
+}
+}
+
+.slider-s:hover{
+    color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.327), 0 0 40px
+    rgba(255, 0, 0, 0.345), 0 0 80px rgba(255, 0, 0, 0.345);
+    transform:scale(1.1) ;
+    background-color: rgba(0, 0, 0, 0.498);
+    
+}
+
+
+
+
+.slider-s::-webkit-scrollbar{
+ background-color: transparent;
+ width: 5px;
+}
+
+.slider-s::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 20px;
+
+}
+
+.slider-s::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.botones-slider{
+    margin-top: ;
+    display: flex;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.498); ;
+    color: #ed1c24;
+    transition: 1.5s;
+    height: 30px; width: 250px ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+
+.botones-slider:hover{
+     color: red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.327), 0 0 40px
+    rgba(255, 0, 0, 0.345), 0 0 80px rgba(255, 0, 0, 0.345);
+}
+.botones-slider span{
+    color: red;
+    transition: 1.7s;
+}
+
+
+
+
+::-webkit-scrollbar{
+ background-color: transparent;
+ width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 0, 0, 0.551);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px; height: 2px;
+    border-color:red;
+}
